@@ -17,29 +17,125 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="#DAFCFB"
+        android:padding="15dp">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <TextView
+            android:id="@+id/text1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Один"
+            android:textSize="25dp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_launcher_foreground"
+            />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <TextView
+            android:id="@+id/text1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="25dp" />
 
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+    </Space>
+
+    <RelativeLayout
+        android:id="@+id/relLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="#DAFCFB"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/text2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Один"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/text2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+    </Space>
+
+    <RelativeLayout
+        android:id="@+id/relLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="#DAFCFB"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/text3_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Один"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/text3_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+    </Space>
+
+    <RelativeLayout
+        android:id="@+id/relLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="#DAFCFB"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/text4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Один"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/text4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+    </Space>
 
 </LinearLayout>

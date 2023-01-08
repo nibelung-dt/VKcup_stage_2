@@ -14,6 +14,8 @@ class FirstList : AppCompatActivity() {
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = CustomRecyclerAdapter(list)  //fillList())
+
+
     }
 /*
     private fun fillList(): List<String> {
@@ -28,10 +30,16 @@ class FirstList : AppCompatActivity() {
         return
     }
 */
-    val first = Questions("first", listOf("aaaa", "bbbb", "cccc", "dddd"), listOf("10%", "25%", "25", "40"))
+    val first = Questions("first", listOf("один", "два", "три", "четыре"), listOf("10%", "25%", "25", "40"))
     val second = Questions("second", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30", "40"))
-    val list = mutableListOf(first, second)
-     //@Override
+    val third = Questions("second", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30", "40"))
+    val forth = Questions("second", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30", "40"))
+    val five = Questions("second", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30", "40"))
+    val list = mutableListOf(first, second, third, forth, five)
+
+
+
+//@Override
     // list.size(Questions)
 
     //list.add(first)
