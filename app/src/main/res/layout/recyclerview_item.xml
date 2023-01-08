@@ -33,11 +33,13 @@
             android:textSize="25dp" />
 
         <ImageView
+            android:id="@+id/image1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:src="@drawable/ic_launcher_foreground"
-            />
+            android:layout_marginRight="45dp"
+            android:src="@drawable/ic_baseline_done_24"
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/text1_2"
@@ -68,6 +70,15 @@
             android:text="Один"
             android:textSize="25dp" />
 
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:src="@drawable/ic_baseline_done_24"
+            android:visibility="invisible" />
+
         <TextView
             android:id="@+id/text2_2"
             android:layout_width="wrap_content"
@@ -97,6 +108,15 @@
             android:text="Один"
             android:textSize="25dp" />
 
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:src="@drawable/ic_baseline_done_24"
+            android:visibility="invisible" />
+
         <TextView
             android:id="@+id/text3_2"
             android:layout_width="wrap_content"
@@ -124,6 +144,15 @@
             android:layout_alignParentLeft="true"
             android:text="Один"
             android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:src="@drawable/ic_baseline_done_24"
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/text4_2"

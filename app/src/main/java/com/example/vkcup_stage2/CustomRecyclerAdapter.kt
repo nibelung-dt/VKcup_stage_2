@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -39,6 +40,12 @@ class CustomRecyclerAdapter(private val names: List<Questions>) : RecyclerView
         val relLayout3: RelativeLayout = itemView.findViewById(R.id.relLayout3)
         val relLayout4: RelativeLayout = itemView.findViewById(R.id.relLayout4)
 
+        val image1: ImageView = itemView.findViewById(R.id.image1)
+        val image2: ImageView = itemView.findViewById(R.id.image2)
+        val image3: ImageView = itemView.findViewById(R.id.image3)
+        val image4: ImageView = itemView.findViewById(R.id.image4)
+
+
        // val button1: Button = itemView.findViewById(R.id.button2)
     }
 
@@ -68,59 +75,125 @@ class CustomRecyclerAdapter(private val names: List<Questions>) : RecyclerView
         var touch2 = false
         var touch3 = false
         var touch4 = false
+        var listenersDisabled = false
+
 
         holder.relLayout1.setOnClickListener { v ->
            // holder.relLayout1.background =
-            if (!touch1) {
+            if (!touch1 && !listenersDisabled) {
                 holder.relLayout1.setBackgroundColor(Color.parseColor("#C0FEDF")) // зеленый
+                holder.image1.setVisibility(View.VISIBLE)
+
                 holder.text1_2.text = names[position].percents[0]
+                holder.text2_2.text = names[position].percents[1]
+                holder.text3_2.text = names[position].percents[2]
+                holder.text4_2.text = names[position].percents[3]
+
                 touch1 = true
-            } else {
+                listenersDisabled = true
+            } else if (touch1 && listenersDisabled) {
                 holder.relLayout1.setBackgroundColor(Color.parseColor("#DAFCFB"))
+
                 holder.text1_2.text = ""
+                holder.text2_2.text = ""
+                holder.text3_2.text = ""
+                holder.text4_2.text = ""
+
+                holder.image1.setVisibility(View.INVISIBLE)
                 touch1 = false
+                listenersDisabled = false
             }
         }
 
         holder.relLayout2.setOnClickListener { v ->
-            if (!touch2) {
+            if (!touch2 && !listenersDisabled) {
                 holder.relLayout2.setBackgroundColor(Color.parseColor("#C0FEDF")) // зеленый
+
+                holder.text1_2.text = names[position].percents[0]
                 holder.text2_2.text = names[position].percents[1]
+                holder.text3_2.text = names[position].percents[2]
+                holder.text4_2.text = names[position].percents[3]
+
+                holder.image2.setVisibility(View.VISIBLE)
                 touch2 = true
-            } else {
+                listenersDisabled = true
+            } else if (touch2 && listenersDisabled) {
                 holder.relLayout2.setBackgroundColor(Color.parseColor("#DAFCFB"))
+
+                holder.text1_2.text = ""
                 holder.text2_2.text = ""
+                holder.text3_2.text = ""
+                holder.text4_2.text = ""
+
+                holder.image2.setVisibility(View.INVISIBLE)
                 touch2 = false
+                listenersDisabled = false
             }
         }
 
         holder.relLayout3.setOnClickListener { v ->
-            if (!touch3) {
+            if (!touch3 && !listenersDisabled) {
                 holder.relLayout3.setBackgroundColor(Color.parseColor("#C0FEDF")) // зеленый
+
+                holder.text1_2.text = names[position].percents[0]
+                holder.text2_2.text = names[position].percents[1]
                 holder.text3_2.text = names[position].percents[2]
+                holder.text4_2.text = names[position].percents[3]
+
+                holder.image3.setVisibility(View.VISIBLE)
                 touch3 = true
-            } else {
+                listenersDisabled = true
+            } else if (touch3 && listenersDisabled) {
                 holder.relLayout3.setBackgroundColor(Color.parseColor("#DAFCFB"))
+
+                holder.text1_2.text = ""
+                holder.text2_2.text = ""
                 holder.text3_2.text = ""
+                holder.text4_2.text = ""
+
+                holder.image3.setVisibility(View.INVISIBLE)
                 touch3 = false
+                listenersDisabled = false
             }
         }
 
         holder.relLayout4.setOnClickListener { v ->
-            if (!touch4) {
+            if (!touch4 && !listenersDisabled) {
                 holder.relLayout4.setBackgroundColor(Color.parseColor("#C0FEDF")) // зеленый
+
+                holder.text1_2.text = names[position].percents[0]
+                holder.text2_2.text = names[position].percents[1]
+                holder.text3_2.text = names[position].percents[2]
                 holder.text4_2.text = names[position].percents[3]
+
+                holder.image4.setVisibility(View.VISIBLE)
                 touch4 = true
-            } else {
+                listenersDisabled = true
+            } else if (touch4 && listenersDisabled) {
                 holder.relLayout4.setBackgroundColor(Color.parseColor("#DAFCFB"))
+
+                holder.text1_2.text = ""
+                holder.text2_2.text = ""
+                holder.text3_2.text = ""
                 holder.text4_2.text = ""
+
+                holder.image4.setVisibility(View.INVISIBLE)
                 touch4 = false
+                listenersDisabled = false
             }
         }
-
-
+/*
+        fun setPercents() {
+            holder.text1_2.text = names[position].percents[0]
+            holder.text2_2.text = names[position].percents[1]
+            holder.text3_2.text = names[position].percents[2]
+            holder.text4_2.text = names[position].percents[3]
+        }
+*/
 
     }
 
     override fun getItemCount() = names.size
 }
+
+
