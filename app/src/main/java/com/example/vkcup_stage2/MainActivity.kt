@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val button2: Button = findViewById(R.id.button2)
-        button2.setOnClickListener {
-            val intent = Intent(this, SecondList::class.java)
+        val button3: Button = findViewById(R.id.button3)
+        button3.setOnClickListener {
+            val intent = Intent(this, DragItems::class.java)
             startActivity(intent)
         }
     }
