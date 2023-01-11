@@ -23,5 +23,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DragItems::class.java)
             startActivity(intent)
         }
+
+        val ratingBars: Button = findViewById(R.id.ratingBars)
+        ratingBars.setOnClickListener {
+            val intent = Intent(this, RatingBars::class.java)
+            startActivity(intent)
+        }
     }
 }

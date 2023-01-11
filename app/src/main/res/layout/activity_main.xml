@@ -39,10 +39,10 @@
          />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/ratingBars"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Второй опрос"
+        android:text="Оценка статьи"
         />
 
 </LinearLayout>
