@@ -15,6 +15,18 @@ class FirstList : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = CustomRecyclerAdapter(list)  //fillList())
 
+        var number = 6
+        // val percents = mutableListOf(15, 20, 25, 40)
+        repeat(95) {
+            val instanceOfQuestion = Questions("Вопрос", "Вопрос $number/100",
+                listOf("один", "два", "три", "четыре"), listOf("15%", "20%", "25%", "40%"))
+            // question = "Вопрос"
+            // numberQuestion = "Вопрос $it/100"
+            list.add( instanceOfQuestion )
+            number++
+            //instanceOfQuestion.remove
+        }
+
 
     }
 /*
@@ -30,12 +42,14 @@ class FirstList : AppCompatActivity() {
         return
     }
 */
-    val first = Questions("first", listOf("один", "два", "три", "четыре"), listOf("10%", "25%", "25%", "40%"))
-    val second = Questions("second", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30%", "40%"))
-    val third = Questions("second", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30%", "40%"))
-    val forth = Questions("second", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30%", "40%"))
-    val five = Questions("second", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30%", "40%"))
+    val first = Questions("первый вопрос", "Вопрос 1/5", listOf("один", "два", "три", "четыре"), listOf("10%", "25%", "25%", "40%"))
+    val second = Questions("второй вопрос", "Вопрос 2/5", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30%", "40%"))
+    val third = Questions("третий вопрос", "Вопрос 3/5", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30%", "40%"))
+    val forth = Questions("четвертый вопрос", "Вопрос 4/5", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30%", "40%"))
+    val five = Questions("пятый вопрос", "Вопрос 5/5", listOf("dfdfdfdsf", "aaa", "cccc", "dddd"), listOf("10%", "20%", "30%", "40%"))
     val list = mutableListOf(first, second, third, forth, five)
+    // val list2 = mutableListOf<Questions>()
+
 
 
 
@@ -55,3 +69,4 @@ class FirstList : AppCompatActivity() {
    //  recyclerView.adapter = CustomRecyclerAdapter(getCatList())
 
 }
+

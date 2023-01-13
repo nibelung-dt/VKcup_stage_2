@@ -58,7 +58,7 @@ class CustomRecyclerAdapter(private val names: List<Questions>) : RecyclerView
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         // holder.largeTextView.text = names[position]
         holder.largeTextView.text = names[position].question
-        holder.smallTextView.text = "Вопрос 1/1"
+        holder.smallTextView.text = names[position].numberQuestion
        // holder.button1.button = names[position].answers[0]  // setText
        // holder.button1.text = names[position].answers[0]
         holder.text1_1.text = names[position].answers[0]

@@ -11,38 +11,37 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Первый опрос"
-            />
-
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Заполнение пропусков"
+            android:text="1. Первый опрос"
             />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:id="@+id/matchElements"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Оценка статьи"
-        />
+        android:text="2. Сопоставление элементов" />
+
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:id="@+id/itemsToText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Перетаскивание элем в текст"
+        android:text="3. Перетаскивание элементов в текст"
          />
 
     <Button
-        android:id="@+id/ratingBars"
-        android:layout_width="wrap_content"
+        android:id="@+id/fillSpaces"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Оценка статьи"
+        android:text="4. Заполнение пропусков"
+        />
+
+    <Button
+        android:id="@+id/ratingBars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Оценка статьи"
         />
 
 </LinearLayout>
