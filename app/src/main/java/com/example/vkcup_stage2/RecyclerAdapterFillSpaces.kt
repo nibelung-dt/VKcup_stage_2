@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapterFillSpaces.MyViewHolder {
             val itemView = LayoutInflater.from(parent.context)
-                .inflate(R.layout.recyclerview_fill_spaces, parent, false)
+                .inflate(R.layout.recyclerview_fill_spaces2, parent, false)
             return RecyclerAdapterFillSpaces.MyViewHolder(itemView)
         }
 

@@ -19,7 +19,7 @@ println(first.percents[1])
 
 // class CustomRecyclerAdapter(private val names: List<String>) : RecyclerView
 // .Adapter<CustomRecyclerAdapter.MyViewHolder>() {
-class CustomRecyclerAdapter(private val names: List<Questions>) : RecyclerView
+class CustomRecyclerAdapter(private val names: List<WorkWithQuestions.Questions>) : RecyclerView
 .Adapter<CustomRecyclerAdapter.MyViewHolder>() {
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
