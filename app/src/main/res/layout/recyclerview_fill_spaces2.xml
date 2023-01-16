@@ -7,186 +7,93 @@
 
 
     <LinearLayout
-        android:layout_width="386dp"
-        android:layout_height="136dp"
-        android:orientation="horizontal"
+        android:layout_width="380dp"
+        android:layout_height="130dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702">
+        app:layout_constraintVertical_bias="0.188">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.671">
 
 
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="В траве сидел"
+                android:textSize="20dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textView2"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="совсем, как"
+                android:textSize="20dp" />
+        </LinearLayout>
 
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="В траве сидел"
-            android:textSize="20dp" />
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.744">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textView2"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="огуречик,"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textView21"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="он был."
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="648dp"
-        android:text="В траве сидел"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.91" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/fillSpace1"
-        android:layout_width="80dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="40dp"
-        android:drawableBottom="@color/black"
-        android:hint=""
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/fillSpace3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="совсем, как"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.946"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/fillSpace2"
-        android:layout_width="100dp"
-        android:layout_height="44dp"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/fillSpace3"
-        android:layout_width="115dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="20dp"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintStart_toEndOf="@+id/fillSpace2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.151" />
-
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:text="он был."
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/fillSpace4"
-        android:layout_width="70dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="15dp"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="356dp"
-        android:text=", зеленая была."
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.338"
-        app:layout_constraintStart_toEndOf="@+id/fillSpace5" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="В лесу родилась"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text=", в лесу она росла. Зимой и летом"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fillSpace3"
-        app:layout_constraintVertical_bias="0.986" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/fillSpace5"
-        android:layout_width="80dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="348dp"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
