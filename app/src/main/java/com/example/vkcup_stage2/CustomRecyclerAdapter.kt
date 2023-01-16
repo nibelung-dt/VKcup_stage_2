@@ -56,6 +56,8 @@ class CustomRecyclerAdapter(private val names: List<WorkWithQuestions.Questions>
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+      // MyViewHolder.
+        holder.setIsRecyclable(false)
         // holder.largeTextView.text = names[position]
         holder.largeTextView.text = names[position].question
         holder.smallTextView.text = names[position].numberQuestion
